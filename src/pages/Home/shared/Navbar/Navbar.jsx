@@ -6,14 +6,14 @@ import './Navbar.css'
 const Navbar = () => {
     const links = <>
         <li><NavLink to='/' className="rounded-xl font-semibold px-4">Home</NavLink></li>
-        <li><NavLink to='/courses' className="rounded-xl font-semibold px-4">Courses</NavLink></li>
+        <li><NavLink to='/programs' className="rounded-xl font-semibold px-4">Programs</NavLink></li>
         <li><NavLink to='/about' className="rounded-xl font-semibold px-4">About</NavLink></li>
         <li><NavLink to='/admission' className="rounded-xl font-semibold px-4">Admission</NavLink></li>
         <li><NavLink to='/webinar' className="rounded-xl font-semibold px-4">Webinar</NavLink></li>
         <li><NavLink to='/success-stories' className="rounded-xl font-semibold px-4">Success Stories</NavLink></li>
     </>
     return (
-        <div className="bg-accent text-primary shadow-sm">
+        <div className="bg-accent text-primary shadow-sm w-full sticky top-0 z-50 backdrop-blur-xl left-0">
             <div className='navbar max-w-7xl  mx-auto w-11/12 px-0'>
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -26,8 +26,9 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to="/" className="text-xl">
+                    <Link to="/" className="text-xl flex items-center gap-2">
                         <img src={logo} alt="" className='w-12 h-12' />
+                        <p className='font-bold text-nowrap hidden sm:block'>EasyLearn <span className='text-secondary'>Institute</span></p>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

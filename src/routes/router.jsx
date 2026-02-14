@@ -3,12 +3,14 @@ import { createBrowserRouter } from 'react-router';
 import RootLayout from '../layouts/RootLayout';
 import Home from '../pages/Home/Home/Home';
 import Loading from '../components/Loading/Loading';
-import Courses from '../pages/Courses/Courses/Courses';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Admission from '../pages/Admission/Admission';
 import About from '../pages/About/About';
 import Webinar from '../pages/Webinar/Webinar';
 import SuccessStories from '../pages/SuccessStories/SuccessStories';
+import programs from '../pages/Courses/Courses/Courses';
+import Login from '../pages/Login/Login';
+import Register from '../pages/Register/Register';
 
 const router = createBrowserRouter([
     {
@@ -21,8 +23,8 @@ const router = createBrowserRouter([
                 Component: Home
             },
             {
-                path: '/courses',
-                Component: Courses,
+                path: '/programs',
+                Component: programs,
             },
             {
                 path: '/about',
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
             {
                 path: '/success-stories',
                 Component: SuccessStories,
+            },
+            {
+                path: '/login',
+                Component: Login,
+            },
+            {
+                path: '/register',
+                Component: Register,
             },
             {
                 path: '/*',
