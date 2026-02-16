@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row gap-4 justify-center items-center mt-10 pt-10 border-t border-primary/10'>
-                    <Link to="/" className="font-bold text-xl hover:text-secondary">EasyLearn Institute</Link>
+                    <Link to="/" className="font-bold text-xl text-primary hover:text-secondary">EasyLearn <span className='text-secondary hover:text-primary'>Institute</span></Link>
                     <p className='text-sm'>@ Copyright 2024 | All rights reserved.</p>
                 </div>
             </div>

@@ -8,9 +8,10 @@ import Admission from '../pages/Admission/Admission';
 import About from '../pages/About/About';
 import Webinar from '../pages/Webinar/Webinar';
 import SuccessStories from '../pages/SuccessStories/SuccessStories';
-import programs from '../pages/Courses/Courses/Courses';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
+import Programs from '../pages/Programs/Programs';
+import ProgramDetails from '../pages/ProgramDetails/ProgramDetails';
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/programs',
-                Component: programs,
+                Component: Programs,
+            },
+            {
+                path: '/programDetails',
+                Component: ProgramDetails,
             },
             {
                 path: '/about',

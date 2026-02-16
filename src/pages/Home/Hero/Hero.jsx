@@ -11,7 +11,7 @@ const Hero = () => {
                     Easy Learn Institute আপনাকে দিচ্ছে দক্ষতা উন্নয়নের জন্য মানসম্মত ও বাস্তবমুখী কোর্স।
                 </p>
                 <button className="bg-primary text-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent hover:text-primary">
-                    কোর্সসমূহ দেখুন
+                    এখনই এনরোল করুন
                 </button>
             </div>
         </section>
