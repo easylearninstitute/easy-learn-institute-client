@@ -12,6 +12,7 @@ import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
 import Programs from '../pages/Programs/Programs';
 import ProgramDetails from '../pages/ProgramDetails/ProgramDetails';
+import AllPrograms from '../components/AllPrograms/AllPrograms';
 
 const router = createBrowserRouter([
     {
@@ -25,11 +26,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/programs',
-                Component: Programs,
+                Component: AllPrograms
             },
             {
-                path: '/programDetails',
+                path: '/programDetails/:id',
                 Component: ProgramDetails,
+                loader: ({params}) => fetch(`/data/programs.json/${params.id}`)
             },
             {
                 path: '/about',
