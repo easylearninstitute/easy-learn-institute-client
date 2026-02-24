@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path: '/programDetails/:id',
                 Component: ProgramDetails,
-                loader: ({params}) => fetch(`/data/programs.json/${params.id}`)
+                loader: () => fetch('/data/programs.json'),
             },
             {
                 path: '/about',
@@ -62,7 +62,8 @@ const router = createBrowserRouter([
                 Component: ErrorPage
             },
         ]
-    }
+    },
+
 ])
 
 export default router;
