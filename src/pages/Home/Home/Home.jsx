@@ -3,11 +3,13 @@ import Navbar from '../shared/Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import Features from '../Features/Features';
 import AllPrograms from '../../../components/AllPrograms/AllPrograms';
+import Marque from '../../../components/Marque/Marque';
 
 const Home = () => {
     
     return (
         <div>
+            <Marque></Marque>
             <Hero></Hero>
             <Features></Features>
             <AllPrograms></AllPrograms>

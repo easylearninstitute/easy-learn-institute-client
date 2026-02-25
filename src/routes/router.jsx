@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/programs',
                 loader: () => fetch('/programs.json'),
-                Component: AllPrograms
+                Component: Programs
             },
             {
                 path: '/programDetails/:id',
