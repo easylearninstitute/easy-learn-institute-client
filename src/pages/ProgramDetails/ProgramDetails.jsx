@@ -17,6 +17,7 @@ const ProgramDetails = () => {
     return (
         <div>
             <h1>{program.title}</h1>
+            <img src={program.image} alt="" />
         </div>
     );
 };

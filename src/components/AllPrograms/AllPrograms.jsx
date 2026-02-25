@@ -1,40 +1,15 @@
-import { Link } from "react-router";
-import { FaClock, FaMoneyBillWave, FaBriefcase } from "react-icons/fa";
-import web from '../../assets/Web-Development.png'
-import graphics from '../../assets/Graphic-Design.png'
-import ui from '../../assets/UI-UX-Design.png'
-import digital from '../../assets/Digital-Marketing.png'
-import cloud from '../../assets/Cloud-Computing-Cybersecurity.png'
-import data from '../../assets/Data-Science-Machine-Learning.png'
+import { Link, useLoaderData } from "react-router";
+// import { FaClock, FaMoneyBillWave, FaBriefcase } from "react-icons/fa";
+// import web from '../../assets/Web-Development.png'
+// import graphics from '../../assets/Graphic-Design.png'
+// import ui from '../../assets/UI-UX-Design.png'
+// import digital from '../../assets/Digital-Marketing.png'
+// import cloud from '../../assets/Cloud-Computing-Cybersecurity.png'
+// import data from '../../assets/Data-Science-Machine-Learning.png'
 
 const AllPrograms = () => {
-    const programs = [
-        {
-            id: 1,
-            image: web
-        },
-        {
-            id: 2,
-            image: graphics
-        },
-        {
-            id: 3,
-            image: ui
-        },
-        {
-            id: 4,
-            image: digital
-        },
-        {
-            id: 5,
-            image: cloud
-        },
-        {
-            id: 6,
-            image: data
-        },
-
-    ]
+    const programs = useLoaderData()
+    console.log(programs)
 
     return (
         <div className="max-w-7xl mx-auto px-6 py-16">

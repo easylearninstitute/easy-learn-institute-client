@@ -18,20 +18,22 @@ const router = createBrowserRouter([
     {
         path: '/',
         Component: RootLayout,
-        HydrateFallback: <Loading></Loading>,
+        HydrateFallback: Loading,
         children: [
             {
                 index: true,
+                loader: () => fetch('/programs.json'),
                 Component: Home
             },
             {
                 path: '/programs',
+                loader: () => fetch('/programs.json'),
                 Component: AllPrograms
             },
             {
                 path: '/programDetails/:id',
-                Component: ProgramDetails,
-                loader: () => fetch('/data/programs.json'),
+                loader: () => fetch(`/programs.json`),
+                element: <ProgramDetails></ProgramDetails>
             },
             {
                 path: '/about',
