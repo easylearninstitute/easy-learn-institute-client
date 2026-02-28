@@ -1,9 +1,10 @@
 import React from 'react';
+import AdmissionProcess from './AdmissionProcess/AdmissionProcess';
 
 const Admission = () => {
     return (
         <div>
-            <h1>Admission Page</h1>
+            <AdmissionProcess></AdmissionProcess>
         </div>
     );
 };
