@@ -16,7 +16,7 @@
 }
 
 .btn-primary {
-  @apply bg-info text-accent border-none font-bold shadow-md shadow-[#00000070]
+  @apply bg-info text-white border-none font-bold shadow-md shadow-[#00000070]
 }
 
 .btn-primary:hover {

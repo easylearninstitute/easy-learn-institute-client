@@ -3,11 +3,13 @@ import Marquee from 'react-fast-marquee';
 
 const Marque = () => {
     return (
-        <div className='max-w-7xl mx-auto w-11/12 my-10'>
+        <div className=''>
             <Marquee>
-                <span>
-                    ” ***সেমিস্টার অনুযায়ী ভর্তির বিশেষ সুযোগ + 3days Mega Offer Running “ | | “Next-Gen Web Development Programme Alpha 103” A Project Based Real Career Path with freelancing. *** New Batch! Start: 1<sup>st</sup> April!!!
-                </span>
+                <div className='bg-gray-200 py-3 text-primary'>
+                    <span>
+                        " || সেমিস্টার অনুযায়ী ভর্তির বিশেষ সুযোগ + ৩ দিনের মেগা অফার চলছে! || Next-Gen Web Development Program Alpha 103 || ফ্রিল্যান্সিং সহ প্রজেক্ট-ভিত্তিক রিয়েল ক্যারিয়ার পাথ। নতুন ব্যাচ শুরু: ১লা এপ্রিল!"
+                    </span>
+                </div>
             </Marquee>
         </div>
     );
