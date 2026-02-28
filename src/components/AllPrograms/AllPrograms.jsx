@@ -13,7 +13,9 @@ const AllPrograms = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-6 py-16">
-            <h1 className="text-4xl font-bold mb-10">আমাদের সকল প্রোগ্রাম</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+                আমাদের সকল প্রোগ্রাম
+            </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {programs.map(program => (

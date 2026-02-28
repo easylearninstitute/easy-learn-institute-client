@@ -5,7 +5,6 @@ import Home from '../pages/Home/Home/Home';
 import Loading from '../components/Loading/Loading';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Admission from '../pages/Admission/Admission';
-import About from '../pages/About/About';
 import Webinar from '../pages/Webinar/Webinar';
 import SuccessStories from '../pages/SuccessStories/SuccessStories';
 import Login from '../pages/Login/Login';
@@ -13,6 +12,7 @@ import Register from '../pages/Register/Register';
 import Programs from '../pages/Programs/Programs';
 import ProgramDetails from '../pages/ProgramDetails/ProgramDetails';
 import AllPrograms from '../components/AllPrograms/AllPrograms';
+import About from '../pages/About/About/About';
 
 const router = createBrowserRouter([
     {
