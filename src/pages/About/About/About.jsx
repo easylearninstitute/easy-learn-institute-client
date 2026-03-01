@@ -10,7 +10,7 @@ import Students from '../Students/Students';
 
 const About = () => {
     return (
-        <div className='max-w-7xl mx-auto w-11/12 my-16'>
+        <div className=''>
             <AboutBanner></AboutBanner>
             <Mission></Mission>
             <HeroAbout></HeroAbout>

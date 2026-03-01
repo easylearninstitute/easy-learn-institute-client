@@ -48,7 +48,7 @@ const AdmissionProcess = () => {
 
                     <div className="bg-accent/50 hover:bg-accent p-8 rounded-xl shadow-lg border-b-4 border-r-4 border-primary/80">
                         <h2 className="text-xl font-bold mb-4 text-primary">ধাপ 8: কোর্স ফি পরিশোধ</h2>
-                        <div className="text-black text-[15px] leading-relaxed flex-grow">
+                        <div className="text-black text-[15px] leading-relaxed grow">
                             {/* <p className="mb-3">আমাদের প্রায় প্রতিটি কোর্স ৪টি সেমিস্টার এ সম্পন্ন হয়, তাই সেমিস্টার অনুযায়ী ভর্তির সুযোগ আছে এছাড়া ফুল কোর্স এ বিশেষ মূল্য ছাড়ে একবারেও ভর্তি হতে পারেন।</p> */}
                             <p className="mb-6">আপনি নগদ, বিকাশ, বা ব্যাংকের মাধ্যমে কোর্স ফি প্রদান করতে পারেন।</p>
                         </div>
